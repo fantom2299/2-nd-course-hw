@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.games {
+    background: #e1ff8f;
+}
+
+.games-content {
+    width: 769px;
+    height: 358px;
+    padding: 196px 0 124px 120px;
+}
+
+.games-content--header {
+    width: 694px;
+    height: 156px;
+    padding: 0 0 24px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.games-content--body {
+    margin: 0 0 48px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.btn {
+    width: 247px;
+    height: 66px;
+    border-radius: 60px;
+    border: 1px solid #202027;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 142%;
+    text-align: center;
+    color: white;
+    background: #202027;
+}
+
+.btn:hover {
+    color: #202027;
+    background: white;
+}
+
+.big-star {
+    width: 587px;
+    position: relative;
+    left: 890px;
+    bottom: 655px;
+}
+
+.small-star {
+    width: 57px;
+    height: 57px;
+    position: relative;
+    bottom: 1262px;
+    right: 51px;
+}
+
+.small-star--there {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    bottom: 1343px;
+    right: -36px;
+}
+
+.small-star--four {
+    width: 83px;
+    height: 83px;
+    position: relative;
+    bottom: 885px;
+    right: -893px;
+}
+
+.small-star--five {
+    width: 37px;
+    height: 37px;
+    position: relative;
+    bottom: 993px;
+    right: -828px;
+}
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #bcec30; /* фон как на твоём примере */
+    white-space: nowrap;
+    position: relative;
+}
+
+.scroll-content {
+    display: inline-block;
+    animation: scroll-left 50s linear infinite;
+    padding: 27px 0 27px 0;
+}
+
+.scroll-content span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    color: #111;
+}
+
+/* Анимация */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.about-games {
+    background: #202027;
+}
+
+.about-games--header {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    padding: 94px 0 24px 119px;
+}
+
+.about-games--text {
+    padding: 0 0 72px 119px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.about-games--service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 119px;
+}
+
+.about-games--services {
+    margin-top: 32px;
+}
+
+.guess--number,
+.arithmetic,
+.text--over,
+.rock--paper-scissors,
+.victorina,
+.color--generator {
+    text-decoration: none;
+    color: #111;
+}
+
+.services-games {
+    width: 378px;
+    background: white;
+    border-radius: 30px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    will-change: transform;
+    position: relative;
+    z-index: 4;
+}
+
+.services-games:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    position: relative; /* важно, чтобы z-index работал */
+}
+
+.games-card__img {
+    border-radius: 30px;
+}
+
+.arithmetic-games,
+.quiz {
+    height: 198px;
+}
+
+.rock-paper-scissors,
+.color-generator {
+    height: 237px;
+}
+
+.number,
+.text-over {
+    height: 159px;
+}
+
+/* .games-card {
+    position: relative;
+    z-index: 3;
+} */
+
+.games-card__number {
+    width: 108px;
+    height: 36px;
+    border-radius: 52px;
+    margin: 32px 0 0 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0px;
+    vertical-align: bottom;
+    background: #f7f7f7;
+    border: 0;
+}
+
+.games-card__description {
+    margin: 16px 0 0 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.big-star-2 {
+    width: 414px;
+    height: 584px;
+    position: relative;
+    left: 1140px;
+    bottom: 1390px;
+    z-index: 0;
+}
+
+.small-star--six {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    bottom: 1280px;
+    left: 25px;
+}
+
+.small-star--seven {
+    width: 54px;
+    height: 54px;
+    position: relative;
+    bottom: 1230px;
+    left: 40px;
+}
