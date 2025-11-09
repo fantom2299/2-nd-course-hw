@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .games {
     background: #e1ff8f;
+    height: 800px;
 }
 
 .games-content {
@@ -14,7 +16,7 @@
 }
 
 .games-content--header {
-    width: 694px;
+    width: 769px;
     height: 156px;
     padding: 0 0 24px 0;
     font-family: "Montserrat", sans-serif;
@@ -57,8 +59,8 @@
 .big-star {
     width: 587px;
     position: relative;
-    left: 890px;
-    bottom: 655px;
+    left: 730px;
+    bottom: 632px;
 }
 
 .small-star {
@@ -99,12 +101,19 @@
     background-color: #bcec30; /* фон как на твоём примере */
     white-space: nowrap;
     position: relative;
+    top: 350px;
 }
 
 .scroll-content {
     display: inline-block;
     animation: scroll-left 50s linear infinite;
     padding: 27px 0 27px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 110.00000000000001%;
+    vertical-align: middle;
+    text-transform: uppercase;
 }
 
 .scroll-content span {
@@ -151,14 +160,14 @@
 }
 
 .about-games--service {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+   
+
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 119px;
+    gap: 32px;
 }
 
-.about-games--services {
-    margin-top: 32px;
-}
 
 .guess--number,
 .arithmetic,
@@ -242,7 +251,7 @@
     width: 414px;
     height: 584px;
     position: relative;
-    left: 1140px;
+    left: 980px;
     bottom: 1390px;
     z-index: 0;
 }
