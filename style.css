@@ -14,7 +14,7 @@ body {
 
 .games {
     background: #e1ff8f;
-    width: 1440px;
+    /* width: 1440px; */
     height: 800px;
     margin: 0 auto;
 }
@@ -68,7 +68,7 @@ body {
 .big-star {
     width: 587px;
     position: relative;
-    left: 734px;
+    left: 890px;
     bottom: 554px;
 }
 
@@ -144,8 +144,9 @@ body {
 
 .about-games {
     background: #202027;
-    margin: 0 auto;
-    max-width: 1440px;
+    padding: 0 79px 0 79px;
+    /* margin: 0 auto;
+    max-width: 1440px; */
 }
 
 .about-games--header {
@@ -178,7 +179,7 @@ body {
     flex-wrap: wrap; */
     margin: 0 auto;
     gap: 32px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .guess--number,
@@ -399,5 +400,5 @@ body {
     text-align: center;
     vertical-align: middle;
     margin: 0 auto;
-    width: 1440px;
+    /* width: 1440px; */
 }
