@@ -172,14 +172,11 @@ body {
 }
 
 .about-games--service {
-    width: 1201px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* display: flex;
-    flex-wrap: wrap; */
-    margin: 0 auto;
+    margin-left: 119px;
+    display: flex;
+    flex-wrap: wrap;
     gap: 32px;
-    /* align-items: center; */
+    
 }
 
 .guess--number,
@@ -197,9 +194,9 @@ body {
     height: 473px;
 }
 
-.arithmetic {
-    height: 512px;
-}
+/* .arithmetic {
+    margin-bottom: 32px;
+} */
 
 /* .services-games, */
 .about-games--services {
@@ -212,6 +209,7 @@ body {
     will-change: transform;
     position: relative;
     z-index: 4;
+    margin-bottom: 32px;
 }
 
 .about-games--services--arithmetic {
@@ -225,6 +223,7 @@ body {
     will-change: transform;
     position: relative;
     z-index: 4;
+    margin-bottom: 32px;
 }
 
 .about-games--services--arithmetic:hover,
@@ -293,16 +292,16 @@ body {
     width: 32px;
     height: 32px;
     position: relative;
-    bottom: 4288px;
-    left: 25px;
+    bottom: 4339px;
+    right: 180px;
 }
 
 .small-star--seven {
     width: 54px;
     height: 54px;
     position: relative;
-    bottom: 4220px;
-    left: 40px;
+    bottom: 4283px;
+    right: 190px;
 }
 
 .mini-games {
@@ -312,7 +311,7 @@ body {
 }
 
 .mini-games--title {
-    margin: 0 0 72px 119px;
+    margin: 0 0 72px 0;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 64px;
@@ -328,8 +327,8 @@ body {
     height: 500px;
     display: flex;
     justify-content: space-between;
-    margin-left: 119px;
-    border-radius: 30px;
+    
+    border-radius: 50px;
     margin-bottom: 60px;
 }
 
@@ -339,9 +338,9 @@ body {
     background: white;
     display: flex;
     flex-direction: row-reverse;
-    border-radius: 30px;
+    border-radius: 50px;
     margin-bottom: 60px;
-    margin-left: 119px;
+
 }
 
 .game {
@@ -401,4 +400,11 @@ body {
     vertical-align: middle;
     margin: 0 auto;
     /* width: 1440px; */
+}
+
+
+@media (max-width: 375px) {
+    .games {
+        background: #E1FF8F;
+    }
 }
