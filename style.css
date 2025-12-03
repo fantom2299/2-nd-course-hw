@@ -22,7 +22,9 @@ body {
 .games-content {
     width: 769px;
     height: 358px;
-    padding: 196px 0 124px 120px;
+    padding: 196px 0 124px 0;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 .games-content--header {
@@ -105,7 +107,7 @@ body {
 }
 
 .scroll-container {
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
     background-color: #bcec30; /* фон как на твоём примере */
     white-space: nowrap;
@@ -144,7 +146,8 @@ body {
 
 .about-games {
     background: #202027;
-    padding: 0 79px 0 79px;
+    padding: 0 79px 0 0;
+    padding-left: calc(50% - 600px);
     /* margin: 0 auto;
     max-width: 1440px; */
 }
@@ -157,11 +160,11 @@ body {
     line-height: 100%;
     letter-spacing: 0px;
     vertical-align: middle;
-    padding: 94px 0 24px 119px;
+    padding: 94px 0 24px 0;
 }
 
 .about-games--text {
-    padding: 0 0 72px 119px;
+    padding: 0 0 72px 0;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -172,7 +175,6 @@ body {
 }
 
 .about-games--service {
-    margin-left: 119px;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
@@ -406,5 +408,9 @@ body {
 @media (max-width: 375px) {
     .games {
         background: #E1FF8F;
+    }
+
+    .games-content {
+        
     }
 }
