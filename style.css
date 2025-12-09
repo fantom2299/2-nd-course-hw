@@ -74,6 +74,10 @@ body {
     bottom: 554px;
 }
 
+/* big-star--mob {
+    display: none;
+} */
+
 .small-star {
     width: 57px;
     height: 57px;
@@ -178,7 +182,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-    
 }
 
 .guess--number,
@@ -206,8 +209,8 @@ body {
     background: white;
     border-radius: 30px;
     transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
     will-change: transform;
     position: relative;
     z-index: 4;
@@ -220,8 +223,8 @@ body {
     background: white;
     border-radius: 30px;
     transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
     will-change: transform;
     position: relative;
     z-index: 4;
@@ -329,7 +332,7 @@ body {
     height: 500px;
     display: flex;
     justify-content: space-between;
-    
+
     border-radius: 50px;
     margin-bottom: 60px;
 }
@@ -342,7 +345,6 @@ body {
     flex-direction: row-reverse;
     border-radius: 50px;
     margin-bottom: 60px;
-
 }
 
 .game {
@@ -404,13 +406,152 @@ body {
     /* width: 1440px; */
 }
 
-
 @media (max-width: 375px) {
     .games {
-        background: #E1FF8F;
+        height: 700px;
     }
 
     .games-content {
-        
+        padding: 147px 0 0 40px;
+    }
+
+    .games-content--header {
+        width: 262px;
+        height: 192px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .games-content--body {
+        width: 296px;
+        height: 60px;
+        text-align: center;
+        font-size: 16px;
+        padding-top: 24px;
+        line-height: 20px;
+    }
+
+    .games-content--footer {
+        padding-top: 36px;
+    }
+
+    .btn {
+        width: 285px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .scroll-container {
+        height: 51px;
+        top: 290px;
+    }
+
+    .scroll-content {
+        padding: 16px 0 16px 0;
+        font-size: 16px;
+    }
+
+    .scroll-content span {
+        font-size: 16px;
+    }
+
+    .big-star {
+        display: none;
+    }
+
+    .big-star--mob {
+        background-image: url(./images/Vector.png);
+        background-repeat: no-repeat;
+        position: relative;
+        left: 174px;
+        bottom: 538px;
+        width: 223px;
+        height: 238px;
+    }
+
+    .small-star--four_mob {
+        background-image: url(./images/Star-8.png);
+        position: relative;
+        bottom: 318px;
+        width: 18px;
+        height: 18px;
+        left: 233px;
+    }
+
+    .small-star--five_mob {
+        width: 39px;
+        height: 41px;
+        background-image: url(./images/Star-9.png);
+        position: relative;
+        bottom: 315px;
+        left: 262px;
+    }
+
+    .small-star {
+        position: absolute;
+        left: 37px;
+        top: 97px;
+    }
+
+    .small-star > img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .small-star--there {
+        position: absolute;
+        left: 91px;
+        top: 64px;
+    }
+
+    .small-star--there > img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .about-games--service,
+    .section {
+        display: none;
+    }
+
+    .mini-games {
+        margin-top: 0;
+    }
+
+    .mini-games--title {
+        padding: 48px 0 0 16px;
+        font-size: 40px;
+    }
+
+    .game-img img {
+        width: 343px;
+        height: 284px;
+    }
+
+    .game-title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .game-text {
+        font-size: 16px;
+        margin-bottom: 32px;
+        line-height: 20px;
+    }
+
+    #guess-number,
+    #arithmetic,
+    #text-over,
+    #rock-paper-scissors,
+    #victorina,
+    #color-generator {
+        width: 343px;
+        height: 100%;
+        flex-direction: column-reverse;
+        margin: 24px 0 0 16px;
+    }
+
+    .game {
+        margin: 29px;
     }
 }
