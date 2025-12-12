@@ -332,8 +332,7 @@ body {
     height: 500px;
     display: flex;
     justify-content: space-between;
-
-    border-radius: 50px;
+    border-radius: 30px;
     margin-bottom: 60px;
 }
 
@@ -343,7 +342,7 @@ body {
     background: white;
     display: flex;
     flex-direction: row-reverse;
-    border-radius: 50px;
+    border-radius: 30px;
     margin-bottom: 60px;
 }
 
@@ -469,7 +468,7 @@ body {
         height: 238px;
     }
 
-    .small-star--four_mob {
+    .small-star-four--mob {
         background-image: url(./images/Star-8.png);
         position: relative;
         bottom: 318px;
@@ -478,7 +477,7 @@ body {
         left: 233px;
     }
 
-    .small-star--five_mob {
+    .small-star-five--mob {
         width: 39px;
         height: 41px;
         background-image: url(./images/Star-9.png);
