@@ -148,6 +148,10 @@ body {
     }
 }
 
+.tablet-version {
+    display: none;
+}
+
 .about-games {
     background: #202027;
     padding: 0 79px 0 0;
@@ -185,7 +189,6 @@ body {
 }
 
 .guess--number,
-.arithmetic,
 .text--over,
 .rock--paper-scissors,
 .victorina,
@@ -195,9 +198,14 @@ body {
     width: 378px;
 }
 
-.guess--number {
-    height: 473px;
+.arithmetic {
+    text-decoration: none;
+    color: #111;
 }
+
+/* .guess--number {
+    height: 473px;
+} */
 
 /* .arithmetic {
     margin-bottom: 32px;
@@ -416,24 +424,26 @@ body {
         padding: 147px 0 0 40px;
     }
 
-    .games-content--header {
+    .games-content--header.mob.tablet {
         width: 262px;
         height: 192px;
         font-size: 40px;
         text-align: center;
     }
 
-    .games-content--body {
+    .games-content--body.mob {
         width: 296px;
         height: 60px;
         text-align: center;
         font-size: 16px;
         padding-top: 24px;
         line-height: 20px;
+        margin-left: 0;
     }
 
-    .games-content--footer {
+    .games-content--footer.mob {
         padding-top: 36px;
+        text-align: inherit;
     }
 
     .btn {
@@ -442,13 +452,13 @@ body {
         font-size: 16px;
     }
 
-    .scroll-container {
+    .scroll-container.mob {
         height: 51px;
         top: 290px;
     }
 
     .scroll-content {
-        padding: 16px 0 16px 0;
+        padding: 21px 0 16px 0;
         font-size: 16px;
     }
 
@@ -456,35 +466,37 @@ body {
         font-size: 16px;
     }
 
-    .big-star {
+    .big-star,
+    .small-star--four,
+    .small-star--five {
         display: none;
     }
 
-    .big-star--mob {
+    .big-star--mob.mobile {
         background-image: url(./images/Vector.png);
         background-repeat: no-repeat;
         position: relative;
         left: 174px;
-        bottom: 538px;
+        bottom: 570px;
         width: 223px;
         height: 238px;
     }
 
-    .small-star-four--mob {
+    .small-star-four--mob.mobile {
         background-image: url(./images/Star-8.png);
         position: relative;
-        bottom: 318px;
+        bottom: 240px;
         width: 18px;
         height: 18px;
         left: 233px;
     }
 
-    .small-star-five--mob {
+    .small-star-five--mob.mobile {
         width: 39px;
         height: 41px;
         background-image: url(./images/Star-9.png);
         position: relative;
-        bottom: 315px;
+        bottom: 230px;
         left: 262px;
     }
 
@@ -515,29 +527,46 @@ body {
         display: none;
     }
 
+    .tablet-version.v768.v375 {
+        display: none;
+    }
+
     .mini-games {
         margin-top: 0;
     }
 
-    .mini-games--title {
+    .mini-games--title.mob {
         padding: 48px 0 0 16px;
         font-size: 40px;
     }
 
-    .game-img img {
+    .game-img.arithmetic {
+        height: 100%;
+    }
+
+    .game-img.guess-number,
+    .geme-img.text-over_mob {
+        height: 100%;
+    }
+
+    .game-img > img.guess-number_mob,
+    .game-img > img.arithmetic.tablet,
+    .game-img > img.text-over,
+    .game-img > img.rock-paper-scissors,
+    .game-img > img.tablet.mob {
         width: 343px;
-        height: 284px;
+        height: 100%;
     }
 
-    .game-title {
-        font-size: 32px;
-        margin-bottom: 16px;
+    .game > h2.tablet {
+        font-size: 20px;
     }
 
-    .game-text {
+    .tablet p {
         font-size: 16px;
         margin-bottom: 32px;
         line-height: 20px;
+        width: 280px;
     }
 
     #guess-number,
@@ -551,8 +580,332 @@ body {
         flex-direction: column-reverse;
         margin: 24px 0 0 16px;
     }
+}
 
-    .game {
-        margin: 29px;
+@media (max-width: 768px) {
+    .games.games-tablet {
+        height: 700px;
+        overflow-x: hidden;
+    }
+
+    .games-content--header.tablet {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .games-content--body {
+        width: 612px;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 82px;
+    }
+
+    .games-content--footer {
+        text-align: center;
+    }
+
+    .big-star--mob {
+        background-image: url(./images/Vector.png);
+        background-repeat: no-repeat;
+        position: relative;
+        left: 608px;
+        bottom: 554px;
+        width: 223px;
+        height: 238px;
+    }
+
+    .small-star-four--mob {
+        background-image: url(./images/Star-8.png);
+        position: relative;
+        bottom: 500px;
+        width: 18px;
+        height: 18px;
+        left: 700px;
+    }
+
+    .small-star-five--mob {
+        width: 39px;
+        height: 41px;
+        background-image: url(./images/Star-9.png);
+        position: relative;
+        bottom: 440px;
+        left: 580px;
+    }
+
+    .small-star--four.tablet {
+        bottom: 740px;
+        left: 40px;
+    }
+
+    .small-star--five.tablet {
+        bottom: 870px;
+        left: 200px;
+    }
+
+    .big-star {
+        display: none;
+    }
+
+    .scroll-container {
+        height: 60px;
+        top: 280px;
+    }
+
+    .scroll-content {
+        font-size: 16px;
+    }
+
+    .scroll-content span {
+        font-size: 16px;
+    }
+
+    .about-games {
+        padding: 0;
+    }
+
+    .about-games--header {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .about-games--text {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about-games--service {
+        display: none;
+    }
+
+    .section.tablet {
+        margin-left: 0;
+    }
+
+    .tablet-version.v768 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+        gap: 32px;
+    }
+
+    .guess--number,
+    .arithmetic,
+    .text--over,
+    .rock--paper-scissors,
+    .victorina,
+    .color--generator {
+        width: 350px;
+    }
+
+    .about-games--services {
+        width: 350px;
+    }
+
+    .games-card__img {
+        width: 350px;
+    }
+
+    .about-games--services--arithmetic {
+        width: 350px;
+        height: 490px;
+    }
+
+    .games-card__number {
+        margin-left: 16px;
+    }
+
+    .games-card__description {
+        font-size: 20px;
+    }
+
+    .rock-paper-scissors {
+        height: 162px;
+    }
+    .color-generator {
+        height: 200px;
+    }
+
+    .generator-color {
+        width: 190px;
+    }
+
+    .mini-games--title.table {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .mini-games--section.table {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .game-card.table.v768 {
+        width: 350px;
+        height: 646px;
+        flex-direction: column-reverse;
+    }
+
+    .game-img {
+        height: 330px;
+    }
+
+    .arithmetic {
+        height: 375px;
+    }
+
+    .game-img > img.tablet {
+        width: 350px;
+        height: 352px;
+    }
+
+    .tablet h2 {
+        font-size: 25px;
+    }
+
+    .tablet--text.text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .btn {
+        width: 252px;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .game-text.rock-paper,
+    .game-text.victorina,
+    .game-text.color-generator--table {
+        width: 220px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .games-content {
+        margin: 0 auto;
+    }
+
+    .big-star {
+        left: 310px;
+    }
+
+    .small-star--four {
+        left: 600px;
+        bottom: 820px;
+    }
+
+    .small-star--five {
+        left: 500px;
+        bottom: 960px;
+    }
+
+    .games-content--header {
+        position: relative;
+        z-index: 2;
+    }
+
+    .section {
+        margin-left: 127px;
+    }
+
+    .about-games--service {
+        display: none;
+    }
+
+    .tablet-version {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 127px;
+    }
+
+    .row {
+        display: flex;
+        gap: 32px;
+    }
+
+    .mini-games--title {
+        text-align: center;
+    }
+
+    .mini-games--section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 106px;
+    }
+
+    .guess--number,
+    .arithmetic,
+    .text--over,
+    .rock--paper-scissors,
+    .victorina,
+    .color--generator {
+        width: 350px;
+    }
+
+    .about-games--services {
+        width: 350px;
+    }
+
+    .games-card__img {
+        width: 350px;
+    }
+
+    .about-games--services--arithmetic {
+        width: 350px;
+        height: 490px;
+    }
+
+    .games-card__number {
+        margin-left: 16px;
+    }
+
+    .games-card__description {
+        font-size: 20px;
+    }
+
+    .rock-paper-scissors {
+        height: 162px;
+    }
+    .color-generator {
+        height: 200px;
+    }
+
+    .generator-color {
+        width: 190px;
+    }
+
+    .game-card:nth-child(odd) {
+        height: 360px;
+        width: 800px;
+    }
+
+    .game-card:nth-child(even) {
+        height: 360px;
+        width: 800px;
+    }
+
+    .game-title {
+        font-size: 30px;
+    }
+
+    .game-text {
+        font-size: 25px;
+    }
+
+    .game-img img {
+        height: 360px;
+        width: 350px;
     }
 }
