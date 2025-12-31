@@ -1,44 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 .games {
     background: #e1ff8f;
-    /* width: 1440px; */
-    height: 800px;
-    margin: 0 auto;
 }
 
 .games-content {
     width: 769px;
     height: 358px;
-    padding: 196px 0 124px 0;
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding: 196px 0 124px 120px;
 }
 
 .games-content--header {
-    width: 769px;
+    width: 694px;
     height: 156px;
+    padding: 0 0 24px 0;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 64px;
+    line-height: 100%;
     letter-spacing: 0px;
     vertical-align: middle;
 }
 
 .games-content--body {
-    width: 720px;
     margin: 0 0 48px 0;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -71,12 +58,8 @@ body {
     width: 587px;
     position: relative;
     left: 890px;
-    bottom: 554px;
+    bottom: 655px;
 }
-
-/* big-star--mob {
-    display: none;
-} */
 
 .small-star {
     width: 57px;
@@ -111,28 +94,21 @@ body {
 }
 
 .scroll-container {
-    /* width: 100%; */
+    width: 100%;
     overflow: hidden;
     background-color: #bcec30; /* фон как на твоём примере */
     white-space: nowrap;
     position: relative;
-    top: 350px;
 }
 
 .scroll-content {
     display: inline-block;
     animation: scroll-left 50s linear infinite;
     padding: 27px 0 27px 0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 110.00000000000001%;
-    vertical-align: middle;
-    text-transform: uppercase;
 }
 
 .scroll-content span {
-    /* display: inline-block; */
+    display: inline-block;
     font-weight: 700;
     font-size: 20px;
     color: #111;
@@ -148,16 +124,8 @@ body {
     }
 }
 
-.tablet-version {
-    display: none;
-}
-
 .about-games {
     background: #202027;
-    padding: 0 79px 0 0;
-    padding-left: calc(50% - 600px);
-    /* margin: 0 auto;
-    max-width: 1440px; */
 }
 
 .about-games--header {
@@ -168,11 +136,11 @@ body {
     line-height: 100%;
     letter-spacing: 0px;
     vertical-align: middle;
-    padding: 94px 0 24px 0;
+    padding: 94px 0 24px 119px;
 }
 
 .about-games--text {
-    padding: 0 0 72px 0;
+    padding: 0 0 72px 119px;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -183,36 +151,26 @@ body {
 }
 
 .about-games--service {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 119px;
+}
+
+.about-games--services {
+    margin-top: 32px;
 }
 
 .guess--number,
+.arithmetic,
 .text--over,
 .rock--paper-scissors,
 .victorina,
 .color--generator {
     text-decoration: none;
     color: #111;
-    width: 378px;
 }
 
-.arithmetic {
-    text-decoration: none;
-    color: #111;
-}
-
-/* .guess--number {
-    height: 473px;
-} */
-
-/* .arithmetic {
-    margin-bottom: 32px;
-} */
-
-/* .services-games, */
-.about-games--services {
+.services-games {
     width: 378px;
     background: white;
     border-radius: 30px;
@@ -222,25 +180,9 @@ body {
     will-change: transform;
     position: relative;
     z-index: 4;
-    margin-bottom: 32px;
 }
 
-.about-games--services--arithmetic {
-    height: 512px;
-    width: 378px;
-    background: white;
-    border-radius: 30px;
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-    will-change: transform;
-    position: relative;
-    z-index: 4;
-    margin-bottom: 32px;
-}
-
-.about-games--services--arithmetic:hover,
-.about-games--services:hover {
+.services-games:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     z-index: 2;
@@ -266,13 +208,16 @@ body {
     height: 159px;
 }
 
+/* .games-card {
+    position: relative;
+    z-index: 3;
+} */
+
 .games-card__number {
-    width: 111px;
+    width: 108px;
     height: 36px;
     border-radius: 52px;
     margin: 32px 0 0 32px;
-    padding: 8px 0 10px 0;
-    text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -296,10 +241,9 @@ body {
 .big-star-2 {
     width: 414px;
     height: 584px;
-    position: absolute;
+    position: relative;
     left: 1140px;
-    /* bottom: 4964px; */
-    top: 877px;
+    bottom: 1390px;
     z-index: 0;
 }
 
@@ -307,605 +251,14 @@ body {
     width: 32px;
     height: 32px;
     position: relative;
-    bottom: 4339px;
-    right: 180px;
+    bottom: 1280px;
+    left: 25px;
 }
 
 .small-star--seven {
     width: 54px;
     height: 54px;
     position: relative;
-    bottom: 4283px;
-    right: 190px;
-}
-
-.mini-games {
-    margin-top: 96px;
-    background: #202027;
-    /* height: 3310px; */
-}
-
-.mini-games--title {
-    margin: 0 0 72px 0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    vertical-align: middle;
-    color: #ffff;
-}
-
-.game-card:nth-child(odd) {
-    background: white;
-    width: 1200px;
-    height: 500px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 30px;
-    margin-bottom: 60px;
-}
-
-.game-card:nth-child(even) {
-    width: 1200px;
-    height: 500px;
-    background: white;
-    display: flex;
-    flex-direction: row-reverse;
-    border-radius: 30px;
-    margin-bottom: 60px;
-}
-
-.game {
-    margin: 50px 0 0 48px;
-}
-
-.game-title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    vertical-align: middle;
-    margin: 0 0 30px 0;
-}
-
-.game-text {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0px;
-    vertical-align: middle;
-    margin: 0 0 36px 0;
-}
-
-.game-img img {
-    width: 600px;
-    height: 500px;
-}
-
-.btn {
-    width: 247px;
-    height: 66px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 142%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #fff;
-    background: #202027;
-    border-radius: 60px;
-    cursor: pointer;
-}
-
-.end-game--footer {
-    background: #bded35;
-    height: 150px;
-    padding-top: 61px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    text-align: center;
-    vertical-align: middle;
-    margin: 0 auto;
-    /* width: 1440px; */
-}
-
-@media (max-width: 375px) {
-    .games {
-        height: 700px;
-    }
-
-    .games-content {
-        padding: 147px 0 0 40px;
-    }
-
-    .games-content--header.mob.tablet {
-        width: 262px;
-        height: 192px;
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .games-content--body.mob {
-        width: 296px;
-        height: 60px;
-        text-align: center;
-        font-size: 16px;
-        padding-top: 24px;
-        line-height: 20px;
-        margin-left: 0;
-    }
-
-    .games-content--footer.mob {
-        padding-top: 36px;
-        text-align: inherit;
-    }
-
-    .btn {
-        width: 285px;
-        height: 55px;
-        font-size: 16px;
-    }
-
-    .scroll-container.mob {
-        height: 51px;
-        top: 290px;
-    }
-
-    .scroll-content {
-        padding: 21px 0 16px 0;
-        font-size: 16px;
-    }
-
-    .scroll-content span {
-        font-size: 16px;
-    }
-
-    .big-star,
-    .small-star--four,
-    .small-star--five {
-        display: none;
-    }
-
-    .big-star--mob.mobile {
-        background-image: url(./images/Vector.png);
-        background-repeat: no-repeat;
-        position: relative;
-        left: 174px;
-        bottom: 570px;
-        width: 223px;
-        height: 238px;
-    }
-
-    .small-star-four--mob.mobile {
-        background-image: url(./images/Star-8.png);
-        position: relative;
-        bottom: 240px;
-        width: 18px;
-        height: 18px;
-        left: 233px;
-    }
-
-    .small-star-five--mob.mobile {
-        width: 39px;
-        height: 41px;
-        background-image: url(./images/Star-9.png);
-        position: relative;
-        bottom: 230px;
-        left: 262px;
-    }
-
-    .small-star {
-        position: absolute;
-        left: 37px;
-        top: 97px;
-    }
-
-    .small-star > img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .small-star--there {
-        position: absolute;
-        left: 91px;
-        top: 64px;
-    }
-
-    .small-star--there > img {
-        width: 21px;
-        height: 21px;
-    }
-
-    .about-games--service,
-    .section {
-        display: none;
-    }
-
-    .tablet-version.v768.v375 {
-        display: none;
-    }
-
-    .mini-games {
-        margin-top: 0;
-    }
-
-    .mini-games--title.mob {
-        padding: 48px 0 0 16px;
-        font-size: 40px;
-    }
-
-    .game-img.arithmetic {
-        height: 100%;
-    }
-
-    .game-img.guess-number,
-    .geme-img.text-over_mob {
-        height: 100%;
-    }
-
-    .game-img > img.guess-number_mob,
-    .game-img > img.arithmetic.tablet,
-    .game-img > img.text-over,
-    .game-img > img.rock-paper-scissors,
-    .game-img > img.tablet.mob {
-        width: 343px;
-        height: 100%;
-    }
-
-    .game > h2.tablet {
-        font-size: 20px;
-    }
-
-    .tablet p {
-        font-size: 16px;
-        margin-bottom: 32px;
-        line-height: 20px;
-        width: 280px;
-    }
-
-    #guess-number,
-    #arithmetic,
-    #text-over,
-    #rock-paper-scissors,
-    #victorina,
-    #color-generator {
-        width: 343px;
-        height: 100%;
-        flex-direction: column-reverse;
-        margin: 24px 0 0 16px;
-    }
-}
-
-@media (max-width: 768px) {
-    .games.games-tablet {
-        height: 700px;
-        overflow-x: hidden;
-    }
-
-    .games-content--header.tablet {
-        text-align: center;
-        font-size: 50px;
-    }
-
-    .games-content--body {
-        width: 612px;
-        font-size: 20px;
-        text-align: center;
-        margin-left: 82px;
-    }
-
-    .games-content--footer {
-        text-align: center;
-    }
-
-    .big-star--mob {
-        background-image: url(./images/Vector.png);
-        background-repeat: no-repeat;
-        position: relative;
-        left: 608px;
-        bottom: 554px;
-        width: 223px;
-        height: 238px;
-    }
-
-    .small-star-four--mob {
-        background-image: url(./images/Star-8.png);
-        position: relative;
-        bottom: 500px;
-        width: 18px;
-        height: 18px;
-        left: 700px;
-    }
-
-    .small-star-five--mob {
-        width: 39px;
-        height: 41px;
-        background-image: url(./images/Star-9.png);
-        position: relative;
-        bottom: 440px;
-        left: 580px;
-    }
-
-    .small-star--four.tablet {
-        bottom: 740px;
-        left: 40px;
-    }
-
-    .small-star--five.tablet {
-        bottom: 870px;
-        left: 200px;
-    }
-
-    .big-star {
-        display: none;
-    }
-
-    .scroll-container {
-        height: 60px;
-        top: 280px;
-    }
-
-    .scroll-content {
-        font-size: 16px;
-    }
-
-    .scroll-content span {
-        font-size: 16px;
-    }
-
-    .about-games {
-        padding: 0;
-    }
-
-    .about-games--header {
-        font-size: 50px;
-        text-align: center;
-    }
-
-    .about-games--text {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .about-games--service {
-        display: none;
-    }
-
-    .section.tablet {
-        margin-left: 0;
-    }
-
-    .tablet-version.v768 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-left: 0;
-    }
-
-    .row {
-        display: flex;
-        justify-content: space-around;
-        gap: 32px;
-    }
-
-    .guess--number,
-    .arithmetic,
-    .text--over,
-    .rock--paper-scissors,
-    .victorina,
-    .color--generator {
-        width: 350px;
-    }
-
-    .about-games--services {
-        width: 350px;
-    }
-
-    .games-card__img {
-        width: 350px;
-    }
-
-    .about-games--services--arithmetic {
-        width: 350px;
-        height: 490px;
-    }
-
-    .games-card__number {
-        margin-left: 16px;
-    }
-
-    .games-card__description {
-        font-size: 20px;
-    }
-
-    .rock-paper-scissors {
-        height: 162px;
-    }
-    .color-generator {
-        height: 200px;
-    }
-
-    .generator-color {
-        width: 190px;
-    }
-
-    .mini-games--title.table {
-        text-align: center;
-        font-size: 32px;
-    }
-
-    .mini-games--section.table {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        padding-left: 0;
-    }
-
-    .game-card.table.v768 {
-        width: 350px;
-        height: 646px;
-        flex-direction: column-reverse;
-    }
-
-    .game-img {
-        height: 330px;
-    }
-
-    .arithmetic {
-        height: 375px;
-    }
-
-    .game-img > img.tablet {
-        width: 350px;
-        height: 352px;
-    }
-
-    .tablet h2 {
-        font-size: 25px;
-    }
-
-    .tablet--text.text {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .btn {
-        width: 252px;
-        height: 50px;
-        font-size: 20px;
-        margin-bottom: 40px;
-    }
-
-    .game-text.rock-paper,
-    .game-text.victorina,
-    .game-text.color-generator--table {
-        width: 220px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .games-content {
-        margin: 0 auto;
-    }
-
-    .big-star {
-        left: 310px;
-    }
-
-    .small-star--four {
-        left: 600px;
-        bottom: 820px;
-    }
-
-    .small-star--five {
-        left: 500px;
-        bottom: 960px;
-    }
-
-    .games-content--header {
-        position: relative;
-        z-index: 2;
-    }
-
-    .section {
-        margin-left: 127px;
-    }
-
-    .about-games--service {
-        display: none;
-    }
-
-    .tablet-version {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 127px;
-    }
-
-    .row {
-        display: flex;
-        gap: 32px;
-    }
-
-    .mini-games--title {
-        text-align: center;
-    }
-
-    .mini-games--section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 106px;
-    }
-
-    .guess--number,
-    .arithmetic,
-    .text--over,
-    .rock--paper-scissors,
-    .victorina,
-    .color--generator {
-        width: 350px;
-    }
-
-    .about-games--services {
-        width: 350px;
-    }
-
-    .games-card__img {
-        width: 350px;
-    }
-
-    .about-games--services--arithmetic {
-        width: 350px;
-        height: 490px;
-    }
-
-    .games-card__number {
-        margin-left: 16px;
-    }
-
-    .games-card__description {
-        font-size: 20px;
-    }
-
-    .rock-paper-scissors {
-        height: 162px;
-    }
-    .color-generator {
-        height: 200px;
-    }
-
-    .generator-color {
-        width: 190px;
-    }
-
-    .game-card:nth-child(odd) {
-        height: 360px;
-        width: 800px;
-    }
-
-    .game-card:nth-child(even) {
-        height: 360px;
-        width: 800px;
-    }
-
-    .game-title {
-        font-size: 30px;
-    }
-
-    .game-text {
-        font-size: 25px;
-    }
-
-    .game-img img {
-        height: 360px;
-        width: 350px;
-    }
+    bottom: 1230px;
+    left: 40px;
 }
