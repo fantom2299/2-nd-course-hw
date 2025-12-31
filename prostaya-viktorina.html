@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Викторина</title>
+  <link rel="stylesheet" href="prostaya-viktorina.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-brain"></i> Викторина</h1>
+      <p class="subtitle">Проверьте свои знания! Ответьте на все вопросы.</p>
+    </header>
+
+    <div class="quiz-container">
+      <div id="start-screen" class="screen active">
+        <div class="welcome-message">
+          <h2><i class="fas fa-gamepad"></i> Добро пожаловать в викторину!</h2>
+          <p>Вам предстоит ответить на <span class="highlight">3 вопроса</span>.</p>
+          <p>Выберите номер правильного ответа для каждого вопроса.</p>
+
+          <div class="instructions">
+            <h3><i class="fas fa-info-circle"></i> Как играть:</h3>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Прочитайте вопрос</li>
+              <li><i class="fas fa-list-ol"></i> Выберите номер правильного ответа</li>
+              <li><i class="fas fa-chart-bar"></i> Узнайте свой результат в конце</li>
+            </ul>
+          </div>
+
+          <button id="start-btn" class="btn-start">
+            <i class="fas fa-play"></i> Начать викторину
+          </button>
+        </div>
+      </div>
+
+      <div id="quiz-screen" class="screen">
+        <div class="quiz-header">
+          <div class="progress">
+            <div class="progress-bar">
+              <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <div class="progress-text">
+              Вопрос <span id="current-question">1</span> из <span id="total-questions">3</span>
+            </div>
+          </div>
+
+          <div class="score-container">
+            <div class="score">
+              <i class="fas fa-star"></i>
+              <span id="score">0</span>/<span id="max-score">3</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="question-container">
+          <h2 id="question-text">Загрузка вопроса...</h2>
+
+          <div id="options-container" class="options-container">
+            <!-- Варианты ответов будут здесь -->
+          </div>
+
+          <div class="quiz-controls">
+            <button id="prev-btn" class="btn-prev" disabled>
+              <i class="fas fa-arrow-left"></i> Назад
+            </button>
+            <button id="next-btn" class="btn-next">
+              Следующий вопрос <i class="fas fa-arrow-right"></i>
+            </button>
+            <button id="submit-btn" class="btn-submit">
+              <i class="fas fa-paper-plane"></i> Завершить викторину
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="result-screen" class="screen">
+        <div class="result-content">
+          <div id="result-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+
+          <h2 id="result-title">Результат викторины</h2>
+
+          <div class="result-stats">
+            <div class="stat-item">
+              <div class="stat-label">Правильных ответов:</div>
+              <div class="stat-value" id="correct-answers">0</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Всего вопросов:</div>
+              <div class="stat-value" id="total-questions-result">3</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Процент правильных:</div>
+              <div class="stat-value" id="percentage">0%</div>
+            </div>
+          </div>
+
+          <div class="result-message" id="result-message">
+            
+          </div>
+
+          <div class="answers-review" id="answers-review">
+            
+          </div>
+
+          <div class="result-buttons">
+            <button id="restart-btn" class="btn-restart">
+              <i class="fas fa-redo"></i> Пройти еще раз
+            </button>
+            <button id="share-btn" class="btn-share">
+              <i class="fas fa-share-alt"></i> Поделиться результатом
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="prostaya-viktorina.js"></script>
+</body>
+
+</html>

@@ -1,164 +1,377 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>JS</title>
+  <title>Курс по JS</title>
 </head>
 
 <body>
-  <section class="games">
-    <div class="games-content">
-      <h2 class="games-content--header">Добро пожаловать на мой сайт мини-игр</h2>
-      <div class="games-content--body">
-        <p>Тебе предстоит пройти несколько увлекательных игр.</p>
-        <p>Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
-      </div>
-      <div class="games-content--footer">
-        <button class="btn">Поехали!</button>
-      </div>
-      <div class="big-star">
-        <img src="./images/big-star.png" alt="big-star">
-      </div>
-      <div class="small-star">
-        <img src="./images/Star-2.png" alt="star2">
-      </div>
-      <div class="small-star--there">
-        <img src="./images/Star-3.png" alt="star3">
-      </div>
-      <div class="small-star--four">
-        <img src="./images/Star-4.png" alt="star4">
-      </div>
-      <div class="small-star--five">
-        <img src="./images/Star-5.png" alt="star5">
-      </div>
-    </div>
-    <div class="scroll-container">
-      <div class="scroll-content">
-        <span>✦ ВИКТОРИНА ✦ УГАДАЙ ЧИСЛО ✦ ПЕРЕВЕРНИ ТЕКСТ ✦ ПРОСТАЯ АРИФМЕТИКА ✦ КАМЕНЬ, НОЖНИЦЫ, БУМАГА ✦ ГЕНЕРАТОР
-          СЛУЧАЙНЫХ ЦВЕТОВ ✦</span>
-        <span> ВИКТОРИНА ✦ УГАДАЙ ЧИСЛО ✦ ПЕРЕВЕРНИ ТЕКСТ ✦ ПРОСТАЯ АРИФМЕТИКА ✦ КАМЕНЬ, НОЖНИЦЫ, БУМАГА ✦ ГЕНЕРАТОР
-          СЛУЧАЙНЫХ ЦВЕТОВ ✦</span>
-      </div>
-    </div>
-  </section>
-  <section class="about-games">
-    <h2 class="about-games--header">Об играх</h2>
-    <p class="about-games--text">
-      В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>
-      Все игры доступны для пользования.
-    </p>
-
-
-    <div class="about-games--service">
-      <a href="#" class="guess--number">
-        <div class="about-games--services">
-          <div class="services-games">
-            <article class="games-card">
-              <div class="games-card__image">
-                <img class="games-card__img" src="./images/games-1.png" alt="games-1">
-              </div>
-              <div class="games-card__content number">
-                <button class="games-card__number">Игра № 1</button>
-                <p class="games-card__description">Угадай число</p>
-              </div>
-            </article>
-          </div>
+  <header>
+    <section class="games games-tablet ">
+      <div class="games-content tablet">
+        <h2 class="games-content--header mob tablet">Добро пожаловать <br> на мой сайт мини-игр</h2>
+        <div class="games-content--body mob tablet">
+          <p>Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и
+            <b>приступай.</b>
+          </p>
         </div>
-      </a>
-      <a href="#" class="arithmetic">
-        <div class="about-games--services">
-          <div class="services-games">
-            <article class="games-card">
-              <div class="games-card__image">
-                <img class="games-card__img" src="./images/games-2.png" alt="games-2">
-              </div>
-              <div class="games-card__content arithmetic-games">
-                <button class="games-card__number">Игра № 2</button>
-                <div>
-                  <p class="games-card__description">Простая <br> арифметика</p>
+        <div class="games-content--footer mob tablet">
+          <button class="btn" id="scroll-btn">Поехали!</button>
+        </div>
+        <div class="big-star--mob mobile"></div>
+        <div class="big-star">
+          <img src="./images/big-star.png" alt="big-star">
+        </div>
+
+        <div class="small-star">
+          <img src="./images/Star-2.png" alt="star2">
+        </div>
+        <div class="small-star--there">
+          <img src="./images/Star-3.png" alt="star3">
+        </div>
+        <div class="small-star--four tablet">
+          <img src="./images/Star-4.png" alt="star4">
+        </div>
+        <div class="small-star--five tablet">
+          <img src="./images/Star-5.png" alt="star5">
+        </div>
+        <div class="small-star-four--mob mobile tablet"></div>
+        <div class="small-star-five--mob mobile"></div>
+      </div>
+      <div class="scroll-container mob tablet">
+        <div class="scroll-content">
+          <span>✦ ВИКТОРИНА ✦ УГАДАЙ ЧИСЛО ✦ ПЕРЕВЕРНИ ТЕКСТ ✦ ПРОСТАЯ АРИФМЕТИКА ✦ КАМЕНЬ, НОЖНИЦЫ, БУМАГА ✦ ГЕНЕРАТОР
+            СЛУЧАЙНЫХ ЦВЕТОВ ✦</span>
+          <span> ВИКТОРИНА ✦ УГАДАЙ ЧИСЛО ✦ ПЕРЕВЕРНИ ТЕКСТ ✦ ПРОСТАЯ АРИФМЕТИКА ✦ КАМЕНЬ, НОЖНИЦЫ, БУМАГА ✦ ГЕНЕРАТОР
+            СЛУЧАЙНЫХ ЦВЕТОВ ✦</span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="about-games">
+      <div class="section tablet">
+        <h2 class="about-games--header">Об играх</h2>
+        <p class="about-games--text">
+          В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>
+          Все игры доступны для пользования.
+        </p>
+      </div>
+
+      <div class="desktop">
+
+        <div class="about-games--service">
+          <div class="coloms">
+            <a href="#guess-number" class="guess--number">
+              <div class="about-games--services">
+                <div class="games-card">
+                  <div class="games-card__image">
+                    <img class="games-card__img" src="./images/games-1.png" alt="games-1">
+                  </div>
+                  <div class="games-card__content number">
+                    <p class="games-card__number">Игра № 1</p>
+                    <p class="games-card__description">Угадай число</p>
+                  </div>
                 </div>
+              </div>
+            </a>
+            <a href="#rock-paper-scissors" class="rock--paper-scissors">
+              <div class="about-games--services">
+                <div class="services-games">
+                  <div class="games-card">
+                    <div class="games-card__image">
+                      <img class="games-card__img" src="./images/games-4.png" alt="games-4">
+                    </div>
+                    <div class="games-card__content rock-paper-scissors">
+                      <p class="games-card__number">Игра № 4</p>
+                      <p class="games-card__description">Камень, <br> ножницы, <br> бумага</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="coloms">
+            <a href="#arithmetic" class="arithmetic">
+              <div class="about-games--services--arithmetic">
 
+                <div class="games-card">
+                  <div class="games-card__image">
+                    <img class="games-card__img" src="./images/games-2.png" alt="games-2">
+                  </div>
+                  <div class="games-card__content arithmetic-games">
+                    <p class="games-card__number">Игра № 2</p>
+                    <div>
+                      <p class="games-card__description">Простая <br> арифметика</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </article>
+            </a>
+            <a href="#victorina" class="victorina">
+              <div class="about-games--services">
+                <div class="services-games">
+                  <div class="games-card">
+                    <div class="games-card__image">
+                      <img class="games-card__img" src="./images/games-5.png" alt="games-5">
+                    </div>
+                    <div class="games-card__content quiz">
+                      <p class="games-card__number">Игра № 5</p>
+                      <p class="games-card__description">Простая <br> викторина</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="coloms">
+            <a href="#text-over" class="text--over">
+              <div class="about-games--services">
+                <div class="games-card">
+                  <div class="games-card__image">
+                    <img class="games-card__img" src="./images/games-3.png" alt="games-3">
+                  </div>
+                  <div class="games-card__content text-over">
+                    <p class="games-card__number">Игра № 3</p>
+                    <p class="games-card__description">Переверни текст</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#color-generator" class="color--generator">
+              <div class="about-games--services">
+                <div class="services-games">
+                  <div class="games-card">
+                    <div class="games-card__image">
+                      <img class="games-card__img" src="./images/games-6.png" alt="games-6">
+                    </div>
+                    <div class="games-card__content color-generator">
+                      <p class="games-card__number">Игра № 6</p>
+                      <p class="games-card__description">Генератор случайных цветов</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
-      </a>
-      <a href="#" class="text--over">
-        <div class="about-games--services">
-          <div class="services-games">
-            <article class="games-card">
-              <div class="games-card__image">
-                <img class="games-card__img" src="./images/games-3.png" alt="games-3">
+
+      </div>
+
+
+
+      <div class="tablet-version v768 v375">
+
+        <div class="row">
+          <a href="#guess-number" class="guess--number">
+            <div class="about-games--services">
+              <div class="games-card">
+                <div class="games-card__image">
+                  <img class="games-card__img" src="./images/games-1.png" alt="games-1">
+                </div>
+                <div class="games-card__content number">
+                  <p class="games-card__number">Игра № 1</p>
+                  <p class="games-card__description">Угадай число</p>
+                </div>
               </div>
-              <div class="games-card__content text-over">
-                <button class="games-card__number">Игра № 3</button>
-                <p class="games-card__description">Переверни текст</p>
+            </div>
+          </a>
+          <a href="#arithmetic" class="arithmetic">
+            <div class="about-games--services--arithmetic">
+              <div class="games-card">
+                <div class="games-card__image">
+                  <img class="games-card__img" src="./images/games-2.png" alt="games-2">
+                </div>
+                <div class="games-card__content arithmetic-games">
+                  <p class="games-card__number">Игра № 2</p>
+
+                  <p class="games-card__description">Простая <br> арифметика</p>
+
+                </div>
               </div>
-            </article>
-          </div>
+            </div>
+          </a>
         </div>
-      </a>
-      <a href="#" class="rock--paper-scissors">
-        <div class="about-games--services">
-          <div class="services-games">
-            <article class="games-card">
-              <div class="games-card__image">
-                <img class="games-card__img" src="./images/games-4.png" alt="games-4">
+        <div class="row">
+          <a href="#text-over" class="text--over">
+            <div class="about-games--services">
+              <div class="games-card">
+                <div class="games-card__image">
+                  <img class="games-card__img" src="./images/games-3.png" alt="games-3">
+                </div>
+                <div class="games-card__content text-over">
+                  <p class="games-card__number">Игра № 3</p>
+                  <p class="games-card__description">Переверни текст</p>
+                </div>
               </div>
-              <div class="games-card__content rock-paper-scissors">
-                <button class="games-card__number">Игра № 4</button>
-                <p class="games-card__description">Камень, <br> ножницы, <br> бумага</p>
+            </div>
+          </a>
+          <a href="#rock-paper-scissors" class="rock--paper-scissors">
+            <div class="about-games--services">
+              <div class="services-games">
+                <div class="games-card">
+                  <div class="games-card__image">
+                    <img class="games-card__img" src="./images/games-4.png" alt="games-4">
+                  </div>
+                  <div class="games-card__content rock-paper-scissors">
+                    <p class="games-card__number">Игра № 4</p>
+                    <p class="games-card__description">Камень, <br> ножницы, <br> бумага</p>
+                  </div>
+                </div>
               </div>
-            </article>
-          </div>
+            </div>
+          </a>
         </div>
-      </a>
-      <a href="#" class="victorina">
-        <div class="about-games--services">
-          <div class="services-games">
-            <article class="games-card">
-              <div class="games-card__image">
-                <img class="games-card__img" src="./images/games-5.png" alt="games-5">
+        <div class="row">
+          <a href="#victorina" class="victorina">
+            <div class="about-games--services">
+              <div class="services-games">
+                <div class="games-card">
+                  <div class="games-card__image">
+                    <img class="games-card__img" src="./images/games-5.png" alt="games-5">
+                  </div>
+                  <div class="games-card__content quiz">
+                    <p class="games-card__number">Игра № 5</p>
+                    <p class="games-card__description">Простая <br> викторина</p>
+                  </div>
+                </div>
               </div>
-              <div class="games-card__content quiz">
-                <button class="games-card__number">Игра № 5</button>
-                <p class="games-card__description">Простая <br> викторина</p>
+            </div>
+          </a>
+          <a href="#color-generator" class="color--generator">
+            <div class="about-games--services">
+              <div class="services-games">
+                <div class="games-card">
+                  <div class="games-card__image">
+                    <img class="games-card__img" src="./images/games-6.png" alt="games-6">
+                  </div>
+                  <div class="games-card__content color-generator">
+                    <p class="games-card__number">Игра № 6</p>
+                    <p class="games-card__description generator-color">Генератор
+                      случайных
+                      цветов
+                    </p>
+                  </div>
+                </div>
               </div>
-            </article>
-          </div>
+            </div>
+          </a>
         </div>
-      </a>
-      <a href="#" class="color--generator">
-        <div class="about-games--services">
-          <div class="services-games">
-            <article class="games-card">
-              <div class="games-card__image">
-                <img class="games-card__img" src="./images/games-6.png" alt="games-6">
+
+
+
+      </div>
+
+
+      <div class="mob-version">
+        
+
+        <section class="mini-games tablet">
+          <h2 class="mini-games--title tablet mob">Мини-игры</h2>
+          <div class="mini-games--section table">
+            <div id="guess-number" class="game-card table v768">
+              <div class="game">
+                <h2 class="game-title tablet">Угадай число</h2>
+                <p class="game-text tablet--text text">Попробуй угадать случайное <br> число от 1 до 100.</p>
+                <button class="btn" onclick="goToGame('../guess-number-game.html')">Играть!</button>
               </div>
-              <div class="games-card__content color-generator">
-                <button class="games-card__number">Игра № 6</button>
-                <p class="games-card__description">Генератор случайных цветов</p>
+              <div class="game-img guess-number">
+                <img class="guess-number_mob " src="./images/mini-games.png" alt="games-1">
               </div>
-            </article>
+            </div>
+
+            <div id="arithmetic" class="game-card table v768">
+              <div class="game">
+                <h2 class="game-title tablet">Простая арифметика</h2>
+                <p class="game-text tablet--text text">Попробуй решить простые арифметические задачи.</p>
+                <button class="btn" onclick="goToGame('../arithmetic.html')">Играть!</button>
+              </div>
+              <div class="game-img arithmetic">
+                <img class="tablet arithmetic" src="./images/mini-games-2.png" alt="games-2">
+              </div>
+            </div>
+
+            <div id="text-over" class="game-card table v768">
+              <div class="game">
+                <h2 class="game-title tablet">Переверни текст</h2>
+                <p class="game-text tablet--text text">Попробуй ввести текст, <br> который будет перевернут.</p>
+                <button class="btn" onclick="goToGame('../pereverni-text.html')">Играть!</button>
+              </div>
+              <div class="game-img text-over_mob">
+                <img class="text-over" src="./images/mini-games-3.png" alt="games-3">
+              </div>
+            </div>
+
+
+
+            <div id="rock-paper-scissors" class="game-card table v768">
+              <div class="game">
+                <h2 class="game-title tablet">Камень, <br> ножницы, <br> бумага</h2>
+                <p class="game-text tablet--text text">Сыграй в популярную 
+                  игру
+                  против компьютера.</p>
+                <button class="btn">Играть!</button>
+              </div>
+              <div class="game-img">
+                <img class="rock-paper-scissors" src="./images/mini-games-4.png" alt="games-4">
+              </div>
+            </div>
+
+            <div id="victorina" class="game-card table v768">
+              <div class="game">
+                <h2 class="game-title tablet">Простая <br> викторина</h2>
+                <p class="game-text tablet--text text">Отвечай на вопросы викторины с вариантами ответов.</p>
+                <button class="btn" onclick="goToGame('../prostaya-viktorina.html')">Играть!</button>
+              </div>
+              <div class="game-img">
+                <img class="tablet mob" src="./images/mini-games-5.png" alt="games-5">
+              </div>
+            </div>
+
+            <div id="color-generator" class="game-card table v768">
+              <div class="game">
+                <h2 class="game-title tablet">Генератор случайных <br> цветов</h2>
+                <p class="game-text tablet--text text">Игра, в которой при клике на кнопку фон страницы меняется на
+                  случайный.</p>
+                <button class="btn">Играть!</button>
+              </div>
+              <div class="game-img ">
+                <img class="tablet mob" src="./images/mini-games-6.png" alt="games-6">
+              </div>
+            </div>
           </div>
+        </section>
+
+        <div class="big-star-2">
+          <img src="./images/big-star-2.png" alt="">
         </div>
-      </a>
+        <div class="small-star--six">
+          <img src="./images/Star-6.png" alt="">
+        </div>
+        <div class="small-star--seven">
+          <img src="./images/Star-7.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="end-game--footer">
+      <p class="end-game">Все права защищены.</p>
     </div>
-    <div class="big-star-2">
-      <img src="./images/big-star-2.png" alt="">
-    </div>
-    <div class="small-star--six">
-      <img src="./images/Star-6.png" alt="">
-    </div>
-    <div class="small-star--seven">
-      <img src="./images/Star-7.png" alt="">
-    </div>
-  </section>
+  </footer>
+
+
+
+
+
 
 
   <script src="script.js"></script>
