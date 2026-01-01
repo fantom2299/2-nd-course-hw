@@ -93,7 +93,7 @@ console.log(currentDate);
 // Задание 9  //
 
 
-const currentDate2 = new Date();
+const currentDate = new Date();
 
 const futureDate = new Date(currentDate);
 
