@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Основы работы DOM</title>
+  <link rel="stylesheet" href="task.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="title">Задание 1</h2>
+    <header>
+      <h1><i class="fas fa-eye"></i> Скрытие и показ текста</h1>
+      <p class="subtitle">Нажмите кнопку, чтобы скрыть или показать заголовок ниже</p>
+    </header>
+
+    <main>
+      <div class="demo-section">
+        <h2 id="target-heading" class="target-heading visible">
+          <i class="fas fa-star"></i> Это очень важный заголовок, который можно скрыть!
+        </h2>
+
+        <div class="controls">
+          <button id="toggle-btn" class="btn-toggle">
+            <i class="fas fa-eye-slash"></i> Скрыть текст
+          </button>
+
+          <button id="reset-btn" class="btn-reset">
+            <i class="fas fa-redo"></i> Сбросить
+          </button>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <i class="fas fa-mouse-pointer"></i>
+            Нажатий: <span id="click-count">0</span>
+          </div>
+          <div class="stat">
+            <i class="fas fa-history"></i>
+            Статус: <span id="status-text">Видимый</span>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+  </div>
+  <div class="list-tasks">
+    <a href="/task2.html">Задание 2</a>
+  </div>
+  <div class="list-tasks">
+    <a href="/task3.html">Задание 3</a>
+  </div>
+  <div class="list-tasks">
+    <a href="/task4.html">Задание 4</a>
+  </div>
+  <div class="list-tasks">
+    <a href="/task5.html">Задание 5</a>
+  </div>
+  <div class="list-tasks">
+    <a href="/task6.html">Задание 6</a>
+  </div>
+  <div class="list-tasks">
+    <a href="/task7.html">Задание 7</a>
+  </div>
+
+
+
+
+
+  <script src="hw-7.js"></script>
+</body>
+
+</html>

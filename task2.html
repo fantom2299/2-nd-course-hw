@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Изменение стиля элемента</title>
+  <link rel="stylesheet" href="task2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-palette"></i> Изменение стиля элемента</h1>
+      <p class="subtitle">Нажмите кнопку, чтобы изменить цвет и стиль текста ниже</p>
+    </header>
+
+    <main>
+      <div class="demo-section">
+        <div class="text-container">
+          <p id="target-text" class="target-text">
+            <i class="fas fa-quote-left"></i>
+            Этот текст будет менять свой цвет и стиль при нажатии на кнопки.
+            Попробуйте разные варианты!
+            <i class="fas fa-quote-right"></i>
+          </p>
+
+          <div class="current-style">
+            <div class="style-info">
+              <span class="label">Текущий цвет:</span>
+              <span id="current-color" class="color-box" style="background-color: #333"></span>
+              <span id="color-name">#333333 (черный)</span>
+            </div>
+            <div class="style-info">
+              <span class="label">Размер шрифта:</span>
+              <span id="font-size">16px</span>
+            </div>
+            <div class="style-info">
+              <span class="label">Начертание:</span>
+              <span id="font-weight">normal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <div class="control-group">
+            <h3><i class="fas fa-fill-drip"></i> Изменить цвет</h3>
+            <div class="color-buttons">
+              <button class="color-btn" data-color="#2196F3" data-name="синий">
+                <span class="color-preview" style="background-color: #2196F3"></span>
+                Синий
+              </button>
+              <button class="color-btn" data-color="#4CAF50" data-name="зеленый">
+                <span class="color-preview" style="background-color: #4CAF50"></span>
+                Зеленый
+              </button>
+              <button class="color-btn" data-color="#FF9800" data-name="оранжевый">
+                <span class="color-preview" style="background-color: #FF9800"></span>
+                Оранжевый
+              </button>
+              <button class="color-btn" data-color="#9C27B0" data-name="фиолетовый">
+                <span class="color-preview" style="background-color: #9C27B0"></span>
+                Фиолетовый
+              </button>
+              <button class="color-btn" data-color="#F44336" data-name="красный">
+                <span class="color-preview" style="background-color: #F44336"></span>
+                Красный
+              </button>
+              <button class="color-btn" data-color="#FFEB3B" data-name="желтый">
+                <span class="color-preview" style="background-color: #FFEB3B"></span>
+                Желтый
+              </button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h3><i class="fas fa-text-height"></i> Дополнительные стили</h3>
+            <div class="style-buttons">
+              <button class="style-btn" data-style="bold">
+                <i class="fas fa-bold"></i> Жирный
+              </button>
+              <button class="style-btn" data-style="italic">
+                <i class="fas fa-italic"></i> Курсив
+              </button>
+              <button class="style-btn" data-style="underline">
+                <i class="fas fa-underline"></i> Подчеркнутый
+              </button>
+              <button class="style-btn" data-style="size-up">
+                <i class="fas fa-search-plus"></i> Увеличить
+              </button>
+              <button class="style-btn" data-style="size-down">
+                <i class="fas fa-search-minus"></i> Уменьшить
+              </button>
+              <button class="style-btn" data-style="shadow">
+                <i class="fas fa-fill"></i> Тень
+              </button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h3><i class="fas fa-random"></i> Случайные эффекты</h3>
+            <div class="action-buttons">
+              <button id="random-color" class="action-btn">
+                <i class="fas fa-random"></i> Случайный цвет
+              </button>
+              <button id="random-style" class="action-btn">
+                <i class="fas fa-star"></i> Случайный стиль
+              </button>
+              <button id="reset-styles" class="action-btn reset">
+                <i class="fas fa-redo"></i> Сбросить стили
+              </button>
+              <button id="rainbow-mode" class="action-btn rainbow">
+                <i class="fas fa-rainbow"></i> Радужный режим
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <i class="fas fa-paint-brush"></i>
+            Изменений цвета: <span id="color-changes">0</span>
+          </div>
+          <div class="stat">
+            <i class="fas fa-history"></i>
+            Всего изменений: <span id="total-changes">0</span>
+          </div>
+        </div>
+      </div>
+
+      
+    </main>
+  </div>
+
+  <script src="hw-8.js"></script>
+</body>
+
+</html>

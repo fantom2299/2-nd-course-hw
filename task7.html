@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Удаление элемента из DOM</title>
+  <link rel="stylesheet" href="task7.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>🗑️ Удаление элемента из DOM</h1>
+
+    <div class="instructions">
+      <h2>📋 Задание:</h2>
+      <p>Создать кнопку, которая удаляет первый элемент &lt;p&gt; с классом <code>description</code>.</p>
+
+      <h2>🎯 Реализация:</h2>
+      <p>1. Создаём несколько абзацев &lt;p&gt;, некоторые с классом <code>description</code></p>
+      <p>2. Используем <code>querySelector</code> для поиска первого элемента с классом <code>description</code></p>
+      <p>3. Используем метод <code>remove()</code> для удаления элемента при нажатии на кнопку</p>
+    </div>
+
+    <div class="status info" id="status">
+      Готов к удалению элементов с классом "description"
+    </div>
+
+    <div class="controls">
+      <button id="removeBtn" class="btn-remove">
+        <span>🗑️</span> Удалить первый элемент с классом description
+      </button>
+      <button id="removeAllBtn" class="btn-remove-all">
+        <span>🔥</span> Удалить все элементы с классом description
+      </button>
+      <button id="resetBtn" class="btn-reset">
+        <span>🔄</span> Восстановить все элементы
+      </button>
+    </div>
+
+    <div class="elements-container" id="elementsContainer">
+      <h3>Абзацы на странице:</h3>
+
+      <!-- Создаём несколько абзацев, некоторые с классом description -->
+      <p class="description" id="p1">Первый абзац с классом description</p>
+      <p class="other" id="p2">Абзац с классом other (не должен удаляться)</p>
+      <p class="description" id="p3">Второй абзац с классом description</p>
+      <p class="other" id="p4">Ещё один обычный абзац</p>
+      <p class="description" id="p5">Третий абзац с классом description</p>
+      <p class="description other" id="p6">Абзац с двумя классами: description и other</p>
+      <p id="p7">Абзац без класса (не должен удаляться)</p>
+      <p class="description" id="p8">Четвёртый абзац с классом description</p>
+    </div>
+
+    <div class="counter">
+      Осталось элементов с классом "description": <span id="descriptionCount">5</span>
+    </div>
+
+    <div class="removed-history" id="removedHistory" style="display: none;">
+      <h4>📜 Удалённые элементы:</h4>
+      <div id="removedList"></div>
+    </div>
+  </div>
+
+<script src="hw-14.js"></script>
+</body>
+
+</html>
