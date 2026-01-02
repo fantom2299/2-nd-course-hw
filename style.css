@@ -5,6 +5,11 @@
 
 .games {
     background: #e1ff8f;
+<<<<<<< Updated upstream
+=======
+    height: 800px;
+    margin: 0 auto;
+>>>>>>> Stashed changes
 }
 
 .games-content {
@@ -57,23 +62,36 @@
 .big-star {
     width: 587px;
     position: relative;
+<<<<<<< Updated upstream
     left: 890px;
     bottom: 655px;
 }
 
+=======
+    left: 732px;
+    bottom: 554px;
+}
+
+.testing-img {
+    position: relative;
+    bottom: 1068px;
+    left: 172px;
+}
+
+>>>>>>> Stashed changes
 .small-star {
     width: 57px;
     height: 57px;
     position: relative;
-    bottom: 1262px;
-    right: 51px;
+    bottom: 2006px;
+    right: 84px;
 }
 
 .small-star--there {
     width: 35px;
     height: 35px;
     position: relative;
-    bottom: 1343px;
+    bottom: 2106px;
     right: -36px;
 }
 
@@ -81,22 +99,25 @@
     width: 83px;
     height: 83px;
     position: relative;
-    bottom: 885px;
-    right: -893px;
+    bottom: 1660px;
+    left: 1000px;
 }
 
 .small-star--five {
     width: 37px;
     height: 37px;
     position: relative;
-    bottom: 993px;
+    bottom: 1820px;
     right: -828px;
 }
 
 .scroll-container {
+<<<<<<< Updated upstream
     width: 100%;
+=======
+>>>>>>> Stashed changes
     overflow: hidden;
-    background-color: #bcec30; /* фон как на твоём примере */
+    background-color: #bcec30;
     white-space: nowrap;
     position: relative;
 }
@@ -108,13 +129,15 @@
 }
 
 .scroll-content span {
+<<<<<<< Updated upstream
     display: inline-block;
+=======
+>>>>>>> Stashed changes
     font-weight: 700;
     font-size: 20px;
     color: #111;
 }
 
-/* Анимация */
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
@@ -126,6 +149,11 @@
 
 .about-games {
     background: #202027;
+<<<<<<< Updated upstream
+=======
+    padding: 0 79px 0 0;
+    padding-left: calc(50% - 600px);
+>>>>>>> Stashed changes
 }
 
 .about-games--header {
@@ -170,7 +198,16 @@
     color: #111;
 }
 
+<<<<<<< Updated upstream
 .services-games {
+=======
+.arithmetic {
+    text-decoration: none;
+    color: #111;
+}
+
+.about-games--services {
+>>>>>>> Stashed changes
     width: 378px;
     background: white;
     border-radius: 30px;
@@ -186,7 +223,7 @@
     transform: scale(1.05);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     z-index: 2;
-    position: relative; /* важно, чтобы z-index работал */
+    position: relative;
 }
 
 .games-card__img {
@@ -242,9 +279,19 @@
     width: 414px;
     height: 584px;
     position: relative;
+<<<<<<< Updated upstream
     left: 1140px;
     bottom: 1390px;
+=======
+    left: 862px;
+    top: -4964px;
+>>>>>>> Stashed changes
     z-index: 0;
+}
+
+.big-star-2-1 {
+    position: relative;
+    bottom: 571px;
 }
 
 .small-star--six {
@@ -259,6 +306,617 @@
     width: 54px;
     height: 54px;
     position: relative;
+<<<<<<< Updated upstream
     bottom: 1230px;
     left: 40px;
+=======
+    bottom: 4283px;
+    right: 190px;
+}
+
+.mini-games {
+    margin-top: 96px;
+    background: #202027;
+}
+
+.mini-games--title {
+    margin: 0 0 72px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #ffff;
+}
+
+.game-card:nth-child(odd) {
+    background: white;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-bottom: 60px;
+}
+
+.game-card:nth-child(even) {
+    width: 1200px;
+    height: 500px;
+    background: white;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 30px;
+    margin-bottom: 60px;
+}
+
+.game {
+    margin: 50px 0 0 48px;
+}
+
+.game-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin: 0 0 30px 0;
+}
+
+.game-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin: 0 0 36px 0;
+}
+
+.game-img img {
+    width: 600px;
+    height: 500px;
+}
+
+.btn {
+    width: 247px;
+    height: 66px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+    background: #202027;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.end-game--footer {
+    background: #bded35;
+    height: 150px;
+    padding-top: 61px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+@media (max-width: 375px) {
+    .games {
+        height: 700px;
+    }
+
+    .games-content {
+        padding: 147px 0 0 40px;
+    }
+
+    .games-content--header.mob.tablet {
+        width: 262px;
+        height: 192px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .games-content--body.mob {
+        width: 296px;
+        height: 60px;
+        text-align: center;
+        font-size: 16px;
+        padding-top: 24px;
+        line-height: 20px;
+        margin-left: 0;
+    }
+
+    .games-content--footer.mob {
+        padding-top: 36px;
+        text-align: inherit;
+    }
+
+    .btn {
+        width: 285px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .scroll-container.mob {
+        height: 51px;
+        top: 290px;
+    }
+
+    .scroll-content {
+        padding: 21px 0 16px 0;
+        font-size: 16px;
+    }
+
+    .scroll-content span {
+        font-size: 16px;
+    }
+
+    .big-star,
+    .small-star--four,
+    .small-star--five {
+        display: none;
+    }
+
+    .big-star--mob.mobile {
+        background-image: url(./images/Vector.png);
+        background-repeat: no-repeat;
+        position: relative;
+        left: 174px;
+        bottom: 570px;
+        width: 223px;
+        height: 238px;
+    }
+
+    .small-star-four--mob.mobile {
+        background-image: url(./images/Star-8.png);
+        position: relative;
+        bottom: 240px;
+        width: 18px;
+        height: 18px;
+        left: 233px;
+    }
+
+    .small-star-five--mob.mobile {
+        width: 39px;
+        height: 41px;
+        background-image: url(./images/Star-9.png);
+        position: relative;
+        bottom: 230px;
+        left: 262px;
+    }
+
+    .small-star {
+        position: absolute;
+        left: 37px;
+        top: 97px;
+    }
+
+    .small-star > img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .small-star--there {
+        position: absolute;
+        left: 91px;
+        top: 64px;
+    }
+
+    .small-star--there > img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .about-games--service,
+    .section {
+        display: none;
+    }
+
+    .tablet-version.v768.v375 {
+        display: none;
+    }
+
+    .mini-games {
+        margin-top: 0;
+    }
+
+    .mini-games--title.mob {
+        padding: 48px 0 0 16px;
+        font-size: 40px;
+    }
+
+    .game-img.arithmetic {
+        height: 100%;
+    }
+
+    .game-img.guess-number,
+    .geme-img.text-over_mob {
+        height: 100%;
+    }
+
+    .game-img > img.guess-number_mob,
+    .game-img > img.arithmetic.tablet,
+    .game-img > img.text-over,
+    .game-img > img.rock-paper-scissors,
+    .game-img > img.tablet.mob {
+        width: 343px;
+        height: 100%;
+    }
+
+    .game > h2.tablet {
+        font-size: 20px;
+    }
+
+    .tablet p {
+        font-size: 16px;
+        margin-bottom: 32px;
+        line-height: 20px;
+        width: 280px;
+    }
+
+    #guess-number,
+    #arithmetic,
+    #text-over,
+    #rock-paper-scissors,
+    #victorina,
+    #color-generator {
+        width: 343px;
+        height: 100%;
+        flex-direction: column-reverse;
+        margin: 24px 0 0 16px;
+    }
+
+   
+}
+
+@media (max-width: 768px) {
+    .games.games-tablet {
+        height: 700px;
+        overflow-x: hidden;
+    }
+
+    .games-content--header.tablet {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .games-content--body {
+        width: 612px;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 82px;
+    }
+
+    .games-content--footer {
+        text-align: center;
+    }
+
+    .big-star--mob {
+        background-image: url(./images/Vector.png);
+        background-repeat: no-repeat;
+        position: relative;
+        left: 608px;
+        bottom: 554px;
+        width: 223px;
+        height: 238px;
+    }
+
+    .small-star-four--mob {
+        background-image: url(./images/Star-8.png);
+        position: relative;
+        bottom: 500px;
+        width: 18px;
+        height: 18px;
+        left: 700px;
+    }
+
+    .small-star-five--mob {
+        width: 39px;
+        height: 41px;
+        background-image: url(./images/Star-9.png);
+        position: relative;
+        bottom: 440px;
+        left: 580px;
+    }
+
+    .small-star--four.tablet {
+        bottom: 740px;
+        left: 40px;
+    }
+
+    .small-star--five.tablet {
+        bottom: 870px;
+        left: 200px;
+    }
+
+    .big-star {
+        display: none;
+    }
+
+    .scroll-container {
+        height: 60px;
+        top: 280px;
+    }
+
+    .scroll-content {
+        font-size: 16px;
+    }
+
+    .scroll-content span {
+        font-size: 16px;
+    }
+
+    .about-games {
+        padding: 0;
+    }
+
+    .about-games--header {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .about-games--text {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about-games--service {
+        display: none;
+    }
+
+    .section.tablet {
+        margin-left: 0;
+    }
+
+    .tablet-version.v768 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+        gap: 32px;
+    }
+
+    .guess--number,
+    .arithmetic,
+    .text--over,
+    .rock--paper-scissors,
+    .victorina,
+    .color--generator {
+        width: 350px;
+    }
+
+    .about-games--services {
+        width: 350px;
+    }
+
+    .games-card__img {
+        width: 350px;
+    }
+
+    .about-games--services--arithmetic {
+        width: 350px;
+        height: 490px;
+    }
+
+    .games-card__number {
+        margin-left: 16px;
+    }
+
+    .games-card__description {
+        font-size: 20px;
+    }
+
+    .rock-paper-scissors {
+        height: 162px;
+    }
+    .color-generator {
+        height: 200px;
+    }
+
+    .generator-color {
+        width: 190px;
+    }
+
+    .mini-games--title.table {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .mini-games--section.table {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .game-card.table.v768 {
+        width: 350px;
+        height: 646px;
+        flex-direction: column-reverse;
+    }
+
+    .game-img {
+        height: 330px;
+    }
+
+    .arithmetic {
+        height: 375px;
+    }
+
+    .game-img > img.tablet {
+        width: 350px;
+        height: 352px;
+    }
+
+    .tablet h2 {
+        font-size: 25px;
+    }
+
+    .tablet--text.text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .btn {
+        width: 252px;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .game-text.rock-paper,
+    .game-text.victorina,
+    .game-text.color-generator--table {
+        width: 220px;
+    }
+
+    
+}
+
+@media (max-width: 1024px) {
+    .games-content {
+        margin: 0 auto;
+    }
+
+    .big-star {
+        left: 310px;
+    }
+
+    .big-star-2 {
+        visibility: hidden;
+    }
+
+    .small-star--four {
+        left: 600px;
+        bottom: 820px;
+    }
+
+    .small-star--five {
+        left: 500px;
+        bottom: 960px;
+    }
+
+    .games-content--header {
+        position: relative;
+        z-index: 2;
+    }
+
+    .section {
+        margin-left: 127px;
+    }
+
+    .about-games--service {
+        display: none;
+    }
+
+    .tablet-version {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 127px;
+    }
+
+    .row {
+        display: flex;
+        gap: 32px;
+    }
+
+    .mini-games--title {
+        text-align: center;
+    }
+
+    .mini-games--section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 106px;
+    }
+
+    .guess--number,
+    .arithmetic,
+    .text--over,
+    .rock--paper-scissors,
+    .victorina,
+    .color--generator {
+        width: 350px;
+    }
+
+    .about-games--services {
+        width: 350px;
+    }
+
+    .games-card__img {
+        width: 350px;
+    }
+
+    .about-games--services--arithmetic {
+        width: 350px;
+        height: 490px;
+    }
+
+    .games-card__number {
+        margin-left: 16px;
+    }
+
+    .games-card__description {
+        font-size: 20px;
+    }
+
+    .rock-paper-scissors {
+        height: 162px;
+    }
+    .color-generator {
+        height: 200px;
+    }
+
+    .generator-color {
+        width: 190px;
+    }
+
+    .game-card:nth-child(odd) {
+        height: 360px;
+        width: 800px;
+    }
+
+    .game-card:nth-child(even) {
+        height: 360px;
+        width: 800px;
+    }
+
+    .game-title {
+        font-size: 30px;
+    }
+
+    .game-text {
+        font-size: 25px;
+    }
+
+    .game-img img {
+        height: 360px;
+        width: 350px;
+    }
+
+   
+}
+
+@media (max-width: 1440px) {
+    .testing-img,
+    .big-star-2-1 {
+        visibility: hidden;
+    }
+>>>>>>> Stashed changes
 }
