@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.instructions {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border-left: 4px solid #667eea;
+}
+
+.instructions h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.instructions ul {
+  padding-left: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-add {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  color: white;
+  flex: 1;
+  max-width: 200px;
+}
+
+.btn-add:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 176, 155, 0.3);
+}
+
+.btn-clear {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  flex: 1;
+  max-width: 200px;
+}
+
+.btn-clear:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 65, 108, 0.3);
+}
+
+.btn-multiple {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  flex: 1;
+  max-width: 200px;
+}
+
+.elements-container {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  min-height: 200px;
+  border: 2px dashed #ddd;
+}
+
+.new-element {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border-left: 4px solid #00b09b;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.new-element:nth-child(even) {
+  border-left-color: #667eea;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.counter {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 40px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+  font-size: 0.8rem;
+}

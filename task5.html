@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Работа с querySelectorAll</title>
+  <link rel="stylesheet" href="task5.css">
+</head>
+
+<body>
+  
+
+  <p><strong>Инструкция:</strong> Найти все элементы &lt;p&gt; с классом <code>description</code> и изменить их текст.
+  </p>
+
+  <div class="result">
+    <h3>Абзацы на странице:</h3>
+
+    <!-- Создаём несколько абзацев с разными классами -->
+    <p class="description">Это первый абзац с классом description</p>
+    <p class="info">Это абзац с классом info (не должен измениться)</p>
+    <p class="description">Это второй абзац с классом description</p>
+    <p class="warning">Это абзац с классом warning (не должен измениться)</p>
+    <p>Это обычный абзац без класса (не должен измениться)</p>
+    <p class="description">Это третий абзац с классом description</p>
+    <p class="note">Это абзац с классом note (не должен измениться)</p>
+    <p class="description">Это четвертый абзац с классом description</p>
+    <p class="description info">Это абзац с двумя классами: description и info (должен измениться)</p>
+  </div>
+
+  <div>
+    <button id="changeBtn">Изменить текст в элементах с классом description</button>
+    <button id="resetBtn">Вернуть исходный текст</button>
+  </div>
+
+ 
+
+
+  <script src="hw-12.js"></script>
+</body>
+
+</html>

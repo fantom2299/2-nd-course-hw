@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Изменение элементов по классу</title>
+  <link rel="stylesheet" href="task4.css">
+</head>
+
+<body>
+  <h1>Задание: изменение элементов по классу</h1>
+
+  <p>Элементы с классом "description":</p>
+
+  <!-- Элементы с классом description -->
+  <div class="description original">Это первый элемент с описанием</div>
+  <p class="description original">Это второй элемент с описанием (тег p)</p>
+  <span class="description original">Это третий элемент с описанием (тег span)</span>
+  <div class="description original">Это четвертый элемент с описанием</div>
+  <div class="other-class">Этот элемент с другим классом (не должен измениться)</div>
+
+  <br>
+  <button onclick="changeDescriptions()">Изменить все элементы с классом description</button>
+  <button onclick="resetText()">Вернуть исходный текст</button>
+
+ <script src="hw-11.js"></script>
+</body>
+
+</html>

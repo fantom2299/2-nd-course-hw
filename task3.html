@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Динамическое изменение текста</title>
+  <link rel="stylesheet" href="task3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-exchange-alt"></i> Динамическое изменение текста</h1>
+      <p class="subtitle">Нажмите кнопку, чтобы изменить текст заголовка ниже</p>
+    </header>
+
+    <main>
+      <div class="demo-section">
+        <div class="text-display">
+          <h2 id="target-heading" class="target-heading">
+            <i class="fas fa-quote-left"></i>
+            Исходный текст заголовка
+            <i class="fas fa-quote-right"></i>
+          </h2>
+
+          <!-- <div class="text-info">
+            <div class="info-item">
+              <i class="fas fa-text-width"></i>
+              Длина текста: <span id="text-length">22</span> символов
+            </div>
+            <div class="info-item">
+              <i class="fas fa-history"></i>
+              Изменений: <span id="change-count">0</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              Последнее изменение: <span id="last-change">--:--:--</span>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="controls">
+          <div class="control-group">
+            <h3><i class="fas fa-magic"></i> Специальные эффекты</h3>
+            <div class="effect-buttons">
+              <button class="effect-btn" data-effect="reverse">
+                <i class="fas fa-retweet"></i> Перевернуть текст
+              </button>
+              <button class="effect-btn" data-effect="uppercase">
+                <i class="fas fa-text-height"></i> Верхний регистр
+              </button>
+              <button class="effect-btn" data-effect="lowercase">
+                <i class="fas fa-text-height"></i> Нижний регистр
+              </button>
+              <button class="effect-btn" data-effect="random">
+                <i class="fas fa-random"></i> Случайный текст
+              </button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h3><i class="fas fa-keyboard"></i> Пользовательский текст</h3>
+            <div class="custom-input">
+              <div class="input-group">
+                <input type="text" id="custom-text" placeholder="Введите свой текст здесь..." maxlength="100">
+                <button id="apply-custom" class="apply-btn">
+                  <i class="fas fa-check"></i> Применить
+                </button>
+              </div>
+              <div class="char-counter">
+                <span id="char-count">0</span> / 100 символов
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+   
+  </div>
+
+  <div id="notification" class="notification">
+    <span id="notification-text"></span>
+  </div>
+
+  <script src="hw-9.js"></script>
+</body>
+
+</html>
