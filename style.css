@@ -1,36 +1,44 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .games {
     background: #e1ff8f;
-<<<<<<< Updated upstream
-=======
+    /* width: 1440px; */
     height: 800px;
     margin: 0 auto;
->>>>>>> Stashed changes
 }
 
 .games-content {
     width: 769px;
     height: 358px;
-    padding: 196px 0 124px 120px;
+    padding: 196px 0 124px 0;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 .games-content--header {
-    width: 694px;
+    width: 769px;
     height: 156px;
-    padding: 0 0 24px 0;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 64px;
-    line-height: 100%;
     letter-spacing: 0px;
     vertical-align: middle;
 }
 
 .games-content--body {
+    width: 720px;
     margin: 0 0 48px 0;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -61,13 +69,8 @@
 
 .big-star {
     width: 587px;
+    height: 800px;
     position: relative;
-<<<<<<< Updated upstream
-    left: 890px;
-    bottom: 655px;
-}
-
-=======
     left: 732px;
     bottom: 554px;
 }
@@ -78,20 +81,27 @@
     left: 172px;
 }
 
->>>>>>> Stashed changes
+
+
+
+
+/* big-star--mob {
+    
+} */
+
 .small-star {
     width: 57px;
     height: 57px;
     position: relative;
-    bottom: 2006px;
-    right: 84px;
+    bottom: 1262px;
+    right: 51px;
 }
 
 .small-star--there {
     width: 35px;
     height: 35px;
     position: relative;
-    bottom: 2106px;
+    bottom: 1343px;
     right: -36px;
 }
 
@@ -99,45 +109,47 @@
     width: 83px;
     height: 83px;
     position: relative;
-    bottom: 1660px;
-    left: 1000px;
+    bottom: 885px;
+    right: -893px;
 }
 
 .small-star--five {
     width: 37px;
     height: 37px;
     position: relative;
-    bottom: 1820px;
+    bottom: 993px;
     right: -828px;
 }
 
 .scroll-container {
-<<<<<<< Updated upstream
-    width: 100%;
-=======
->>>>>>> Stashed changes
+    /* width: 100%; */
     overflow: hidden;
-    background-color: #bcec30;
+    background-color: #bcec30; /* фон как на твоём примере */
     white-space: nowrap;
     position: relative;
+    top: 350px;
 }
 
 .scroll-content {
     display: inline-block;
     animation: scroll-left 50s linear infinite;
     padding: 27px 0 27px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 110.00000000000001%;
+    vertical-align: middle;
+    text-transform: uppercase;
 }
 
 .scroll-content span {
-<<<<<<< Updated upstream
-    display: inline-block;
-=======
->>>>>>> Stashed changes
+    /* display: inline-block; */
     font-weight: 700;
     font-size: 20px;
     color: #111;
 }
 
+/* Анимация */
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
@@ -147,13 +159,16 @@
     }
 }
 
+.tablet-version {
+    display: none;
+}
+
 .about-games {
     background: #202027;
-<<<<<<< Updated upstream
-=======
     padding: 0 79px 0 0;
     padding-left: calc(50% - 600px);
->>>>>>> Stashed changes
+    /* margin: 0 auto;
+    max-width: 1440px; */
 }
 
 .about-games--header {
@@ -164,11 +179,11 @@
     line-height: 100%;
     letter-spacing: 0px;
     vertical-align: middle;
-    padding: 94px 0 24px 119px;
+    padding: 94px 0 24px 0;
 }
 
 .about-games--text {
-    padding: 0 0 72px 119px;
+    padding: 0 0 72px 0;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -179,35 +194,36 @@
 }
 
 .about-games--service {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 119px;
-}
-
-.about-games--services {
-    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 
 .guess--number,
-.arithmetic,
 .text--over,
 .rock--paper-scissors,
 .victorina,
 .color--generator {
     text-decoration: none;
     color: #111;
+    width: 378px;
 }
 
-<<<<<<< Updated upstream
-.services-games {
-=======
 .arithmetic {
     text-decoration: none;
     color: #111;
 }
 
+/* .guess--number {
+    height: 473px;
+} */
+
+/* .arithmetic {
+    margin-bottom: 32px;
+} */
+
+/* .services-games, */
 .about-games--services {
->>>>>>> Stashed changes
     width: 378px;
     background: white;
     border-radius: 30px;
@@ -217,13 +233,29 @@
     will-change: transform;
     position: relative;
     z-index: 4;
+    margin-bottom: 32px;
 }
 
-.services-games:hover {
+.about-games--services--arithmetic {
+    height: 512px;
+    width: 378px;
+    background: white;
+    border-radius: 30px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    will-change: transform;
+    position: relative;
+    z-index: 4;
+    margin-bottom: 32px;
+}
+
+.about-games--services--arithmetic:hover,
+.about-games--services:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     z-index: 2;
-    position: relative;
+    position: relative; /* важно, чтобы z-index работал */
 }
 
 .games-card__img {
@@ -245,16 +277,13 @@
     height: 159px;
 }
 
-/* .games-card {
-    position: relative;
-    z-index: 3;
-} */
-
 .games-card__number {
-    width: 108px;
+    width: 111px;
     height: 36px;
     border-radius: 52px;
     margin: 32px 0 0 32px;
+    padding: 8px 0 10px 0;
+    text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -279,13 +308,9 @@
     width: 414px;
     height: 584px;
     position: relative;
-<<<<<<< Updated upstream
-    left: 1140px;
-    bottom: 1390px;
-=======
     left: 862px;
+   
     top: -4964px;
->>>>>>> Stashed changes
     z-index: 0;
 }
 
@@ -298,18 +323,14 @@
     width: 32px;
     height: 32px;
     position: relative;
-    bottom: 1280px;
-    left: 25px;
+    bottom: 4339px;
+    right: 180px;
 }
 
 .small-star--seven {
     width: 54px;
     height: 54px;
     position: relative;
-<<<<<<< Updated upstream
-    bottom: 1230px;
-    left: 40px;
-=======
     bottom: 4283px;
     right: 190px;
 }
@@ -317,6 +338,7 @@
 .mini-games {
     margin-top: 96px;
     background: #202027;
+    /* height: 3310px; */
 }
 
 .mini-games--title {
@@ -406,6 +428,7 @@
     text-align: center;
     vertical-align: middle;
     margin: 0 auto;
+    /* width: 1440px; */
 }
 
 @media (max-width: 375px) {
@@ -461,7 +484,10 @@
 
     .big-star,
     .small-star--four,
-    .small-star--five {
+    .small-star--five,
+    .testing-img,
+    .big-star-2,
+    .big-star-2-1 {
         display: none;
     }
 
@@ -573,8 +599,6 @@
         flex-direction: column-reverse;
         margin: 24px 0 0 16px;
     }
-
-   
 }
 
 @media (max-width: 768px) {
@@ -784,8 +808,6 @@
     .game-text.color-generator--table {
         width: 220px;
     }
-
-    
 }
 
 @media (max-width: 1024px) {
@@ -798,7 +820,7 @@
     }
 
     .big-star-2 {
-        visibility: hidden;
+        display: none;
     }
 
     .small-star--four {
@@ -909,14 +931,12 @@
         height: 360px;
         width: 350px;
     }
-
-   
 }
 
 @media (max-width: 1440px) {
     .testing-img,
+    
     .big-star-2-1 {
-        visibility: hidden;
+        display: none;
     }
->>>>>>> Stashed changes
 }
