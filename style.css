@@ -358,7 +358,7 @@ body {
     height: 500px;
     display: flex;
     justify-content: space-between;
-    border-radius: 30px;
+    border-radius: 48px;
     margin-bottom: 60px;
 }
 
@@ -368,7 +368,7 @@ body {
     background: white;
     display: flex;
     flex-direction: row-reverse;
-    border-radius: 30px;
+    border-radius: 48px;
     margin-bottom: 60px;
 }
 
@@ -399,6 +399,7 @@ body {
 .game-img img {
     width: 600px;
     height: 500px;
+    border-radius: 48px;
 }
 
 .btn {
